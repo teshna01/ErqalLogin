@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login_page_bg"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="26dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <TextView
+            android:text="تىزىملىتىش"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginTop="24px"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Name Label -->
+        <com.almj.erqallogin.view.CustomTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_phone"
+                      android:textDirection="ltr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="يانفۇن" />
+        </com.almj.erqallogin.view.CustomTextInputLayout>
+
+        <!--  Email Label -->
+        <com.almj.erqallogin.view.CustomTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="پارول" />
+        </com.almj.erqallogin.view.CustomTextInputLayout>
+
+        <!-- Password Label -->
+        <com.almj.erqallogin.view.CustomTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="يەنە پارول"/>
+        </com.almj.erqallogin.view.CustomTextInputLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+         >
+           <com.almj.erqallogin.view.CustomTextInputLayout
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp">
+           <EditText android:id="@+id/input_code"
+                     android:textDirection="ltr"
+                     android:layout_width="200dp"
+                     android:layout_height="wrap_content"
+                     android:inputType="numberDecimal"
+                     android:hint="تەستىق نومۇرى"/>
+           </com.almj.erqallogin.view.CustomTextInputLayout>
+           <android.support.v7.widget.AppCompatButton
+               android:id="@+id/btn_code"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal"
+               android:layout_marginTop="15dp"
+               android:padding="5dp"
+               android:text="نومۇرغا ئېرىشىش"
+               android:textSize="10sp"
+               android:background="@drawable/button_border"
+               android:layout_alignParentLeft="true"
+             />
+       </RelativeLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="كېيىنكى قەدەم"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="تىزىملىتىپ بولغان؟"
+            android:gravity="center"
+            android:textSize="12dip"
+            />
+
+    </LinearLayout>
+</ScrollView>
