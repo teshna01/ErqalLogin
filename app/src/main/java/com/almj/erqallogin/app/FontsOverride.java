@@ -6,7 +6,9 @@ import android.graphics.Typeface;
 import java.lang.reflect.Field;
 
 /**
- * ErqalLogin-MD -- Created by mac on 16/5/21.
+ *  Override Application font typeface
+ * ErqalLogin_MD -- Created by almj on 16/5/21.
+ * Author-URl: www.teshna.me
  */
 public final class FontsOverride {
   public static void  setDefaultFont(Context context, String staticTypefaceFieldName, String fontAssetName){

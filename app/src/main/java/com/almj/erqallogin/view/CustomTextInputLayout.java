@@ -10,7 +10,9 @@ import android.widget.EditText;
 import java.lang.reflect.Field;
 
 /**
- * materiallogindemo -- Created by mac on 16/5/21.
+ * Custum TextInputLayout with supporting Uighur font
+ * ErqalLogin_MD -- Created by almj on 16/5/21.
+ * Author-URl: www.teshna.me
  */
 public class CustomTextInputLayout extends TextInputLayout {
     public CustomTextInputLayout(Context context) {
@@ -24,6 +26,7 @@ public class CustomTextInputLayout extends TextInputLayout {
     }
 
     private void initFont(Context context) {
+        //set TypeFace for TextInputLayout's Edit Text with UKIJTuzTom.ttf
         final Typeface typeface = Typeface.createFromAsset(
                 context.getAssets(), "UKIJTuzTom.ttf");
 
